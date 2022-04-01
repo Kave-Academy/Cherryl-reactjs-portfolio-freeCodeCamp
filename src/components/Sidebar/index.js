@@ -24,6 +24,7 @@ const Sidebar = () =>  (
       </NavLink>
     </nav>
 
+
    {/* SOCMED SECTION */}
 
     <ul>
@@ -48,6 +49,8 @@ const Sidebar = () =>  (
         </a>
       </li>
     </ul>
+
+
 
      {/* END OF SOCMED SECTION */}
 
