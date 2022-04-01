@@ -4,7 +4,7 @@ import LogoS from "../../assets/images/logo-s.png"
 import LogoSubtitle from "../../assets/images/logo_sub.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGithub, faLinkedinIn, faPinterest, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () =>  (
   <div className="nav-bar">
@@ -38,8 +38,13 @@ const Sidebar = () =>  (
         </a>
       </li>
       <li>
-        <a target="_blank" rel='noreferrer' href='https://www.facebook.com/chedj009'>
-          <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
+        <a target="_blank" rel='noreferrer' href='https://twitter.com/chedj009'>
+          <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel='noreferrer' href='https://www.youtube.com/channel/UC1vC5ifpYJnv2-DiyBH0Zog'>
+          <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
         </a>
       </li>
     </ul>
