@@ -1,8 +1,9 @@
-import { faFacebook, faInstagram, faPinterest, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3, faGitAlt,faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import Loader from 'react-loaders'
 
 const About = () => {
   
@@ -16,6 +17,7 @@ const About = () => {
   }, [])
 
   return(
+    <>
   <div className='container about-page'>
     <div className="text-zone">
       <h1>
@@ -33,24 +35,29 @@ const About = () => {
     <div className='stage-cube-cont'>
       <div className="cubespinner">
         <div className="face1">
-          <FontAwesomeIcon icon={faFacebook} color="#dd0031"/>
+          <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
         </div>
         <div className="face2">
-          <FontAwesomeIcon icon={faTwitter} color="#dd0031"/>
+          <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
         </div>
         <div className="face3">
-          <FontAwesomeIcon icon={faInstagram} color="#dd0031"/>
+          <FontAwesomeIcon icon={faReact} color="#5ED4F4"/>
         </div>
         <div className="face4">
-          <FontAwesomeIcon icon={faYoutube} color="#dd0031"/>
+          <FontAwesomeIcon icon={faJs} color="#EFD81D"/>
         </div>
         <div className="face5">
-          <FontAwesomeIcon icon={faPinterest} color="#dd0031"/>
+          <FontAwesomeIcon icon={faGitAlt} color="#ec4d28"/>
+        </div>
+        <div className="face6">
+          <FontAwesomeIcon icon={faBootstrap} color="#7625F2"/>
         </div>
       </div>
 
     </div>
   </div>
+  <Loader type='pacman' />
+  </>
   )}
 
 export default About
